@@ -33,9 +33,9 @@
             echo "<td>".$row['age']."</td>";
             echo "<td>".$row['email']."</td>";	
             echo "<td>".$row['course']."</td>";
-            echo "<td>".$row['Gender']."</td>";
+            echo "<td>".$row['gender']."</td>";
             echo "<td>".$row['year']."</td>";
-            echo "<td><a href=\"edit.php?id=$row[id]\">Edit</a> | <a href=\"delete.php?id=$row[id]\" onClick=\"return confirm('Are you sure you want to delete?')\">Delete</a> | <a href=\"edit.php?id=$row[id]\">Add</a> </td>";		
+            echo "<td><a href=\"edit.php?id=$row[id]\">Edit</a> | <a href=\"delete.php?id=$row[id]\" onClick=\"return confirm('Are you sure you want to delete?')\">Delete</a> </td>";		
             echo "</tr>";
             
         }
@@ -44,6 +44,7 @@
     }
 	?>
 	</table>
+    <a href="./add.html">Add</a>
     
 </body>
 </html>
