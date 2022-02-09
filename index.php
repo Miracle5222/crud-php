@@ -9,9 +9,12 @@
 <body>
 <?php include_once("config.php"); ?>
 
+
+<div style= "width: 100vw; display: flex; justify-content: center; flex-direction: column;">
+<h1 style='color:green'>Students Record</h1>
 <table width='80%' border=0>
 
-	<tr bgcolor='#CCCCCC'>
+	<tr style="background-color: black; color:white;">
 		<td>First Name</td>
         <td>Last Name</td>
 		<td>Age</td>
@@ -35,16 +38,23 @@
             echo "<td>".$row['course']."</td>";
             echo "<td>".$row['gender']."</td>";
             echo "<td>".$row['year']."</td>";
-            echo "<td><a href=\"edit.php?id=$row[id]\">Edit</a> | <a href=\"delete.php?id=$row[id]\" onClick=\"return confirm('Are you sure you want to delete?')\">Delete</a> </td>";		
+            echo "<td>
+            <a style= 'text-decoration: none; background-color: green; color: white; padding: 8px 15px;border-radius: 8px;  font-weight: bold; display: inline-block 'href=\"edit.php?id=$row[id]\">Edit</a>
+            | <a style= 'text-decoration: none; background-color: red; color: white; padding: 8px 15px;border-radius: 8px;  font-weight: bold; display: inline-block'  href=\"delete.php?id=$row[id]\" onClick=\"return confirm('Are you sure you want to delete?')\">Delete</a> </td>";		
             echo "</tr>";
             
         }
     } else {
-            echo "0 results";
+            echo "<h3 style='color:red'>No Record</h3>";
     }
 	?>
 	</table>
-    <a href="./add.html">Add</a>
+</div>
+
+
+  <div style=" width: 100vw; display: flex; justify-content: center; margin-top: 50px;">
+      <a style= "text-decoration: none; background-color: black; color: white; padding: 8px 15px;border-radius: 8px;  font-width: bold; display: inline-block" href="./add.html">Add</a>
+  </div>
     
 </body>
 </html>

@@ -7,44 +7,55 @@
     <title>Add students</title>
   </head>
   <body>
-    <a href="index.php">Home</a>
-    <br /><br />
+    <div
+      style="
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        
+        align-items: center;
+        flex-direction: column;
+      "
+    >
+      <a   style= "text-decoration: none; background-color: green; color: white; padding: 8px 15px;border-radius: 8px;  font-weight: bold; display: inline-block" href="index.php">Home</a>
+      <br /><br />
 
-    <form action="add.php" method="post" name="form1">
-      <table width="25%" border="0">
-        <tr>
-          <td>First Name</td>
-          <td><input type="text" name="fname" /></td>
-        </tr>
-        <tr>
-          <td>Last Name</td>
-          <td><input type="text" name="lname" /></td>
-        </tr>
-        <tr>
-          <td>Age</td>
-          <td><input type="text" name="age" /></td>
-        </tr>
-        <tr>
-          <td>Email</td>
-          <td><input type="text" name="email" /></td>
-        </tr>
-        <tr>
-          <td>Course</td>
-          <td><input type="text" name="course" /></td>
-        </tr>
-        <tr>
-          <td>Gender</td>
-          <td><input type="text" name="gender" /></td>
-        </tr>
-        <tr>
-          <td>Year</td>
-          <td><input type="text" name="year" /></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td><input type="submit" name="Submit" value="Add" /></td>
-        </tr>
-      </table>
-    </form>
+      <form action="add.php" method="post" name="form1" ">
+        <table width="25%" border="0">
+          <tr>
+            <td>FirstName</td>
+            <td><input type="text" name="fname" /></td>
+          </tr>
+          <tr>
+            <td>LastName</td>
+            <td><input type="text" name="lname" /></td>
+          </tr>
+          <tr>
+            <td>Age</td>
+            <td><input type="text" name="age" /></td>
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td><input type="text" name="email" /></td>
+          </tr>
+          <tr>
+            <td>Course</td>
+            <td><input type="text" name="course" /></td>
+          </tr>
+          <tr>
+            <td>Gender</td>
+            <td><input type="text" name="gender" /></td>
+          </tr>
+          <tr>
+            <td>Year</td>
+            <td><input type="text" name="year" /></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><input type="submit" name="Submit" value="Add" /></td>
+          </tr>
+        </table>
+      </form>
+    </div>
   </body>
 </html>
